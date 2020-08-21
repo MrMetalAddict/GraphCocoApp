@@ -1,0 +1,7 @@
+  Writing C:\Users\negiv2\AppData\Local\Temp\tmpAB85.tmp
+info : Adding PackageReference for package 'Microsoft' into project 'C:\Users\negiv2\source\repos\GraphCocoApp\GraphCocoApp.csproj'.
+info : Restoring packages for C:\Users\negiv2\source\repos\GraphCocoApp\GraphCocoApp.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft/index.json
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft/index.json 953ms
+error: Unable to find package Microsoft. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org
+error: Package 'Microsoft' is incompatible with 'all' frameworks in project 'C:\Users\negiv2\source\repos\GraphCocoApp\GraphCocoApp.csproj'.
