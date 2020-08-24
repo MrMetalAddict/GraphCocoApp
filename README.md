@@ -5,4 +5,4 @@ This is an implementation of Facebook's GraphQL in .NET.
 
 Now the specification is being developed by the GraphQL Foundation.
 
-This project uses entity frameWork with hotchocolate.
+This project uses Entity Framework Core  with hotchocolate.
