@@ -24,11 +24,5 @@ namespace GraphCocoApp
         public IQueryable<ConnectUser> GetUsers([Service]ConnectContext context) =>
             context.ConnectUsers;
 
-        //[UsePaging]
-        //[UseSelection]
-        //[UseFiltering]
-        //[UseSorting]
-        //public IQueryable<Course> GetCourses([Service]SchoolContext context) =>
-        //    context.Courses;
     }
 }

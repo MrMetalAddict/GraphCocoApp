@@ -12,6 +12,9 @@ namespace GraphCocoApp
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string AppId { get; set; }
+        public string BuId { get; set; }
+        public string CustomerID { get; set; }
+        public string RoleId { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
     }
 }

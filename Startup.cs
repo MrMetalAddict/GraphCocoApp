@@ -21,7 +21,7 @@ namespace GraphCocoApp
 
             services.AddGraphQL(
                 SchemaBuilder.New()
-                    .AddQueryType<DbLoggerCategory.Query>()
+                    .AddQueryType<Query>()
                     .Create(),
                 new QueryExecutionOptions { ForceSerialExecution = true });
         }
@@ -47,6 +47,7 @@ namespace GraphCocoApp
             {
                 endpoints.MapGet("/", async context =>
                 {
+                    
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
@@ -73,19 +74,16 @@ namespace GraphCocoApp
                                 {
                                     new Role()
                                     {
-                                        BuId = "MDT",
                                         CustomerID = "MDT_0000104120",
                                         RoleId = 987546
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
                                         CustomerID = "MDT_0000104500",
                                         RoleId = 9876511
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
                                         CustomerID = "MDT_0000105100",
                                         RoleId = 9876519
                                     }
@@ -133,25 +131,22 @@ namespace GraphCocoApp
                         {
                             new Access()
                             {
-                                AppId = "CC" ,
+                                AppId = "Channel_Connect" ,
                                 Roles = new List<Role>()
                                 {
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104120",
+                                        CustomerID = "MDT_0000104120_1",
                                         RoleId = 987546
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104500",
+                                        CustomerID = "MDT_0000104500_2",
                                         RoleId = 9876511
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000105100",
+                                        CustomerID = "MDT_0000105100_3",
                                         RoleId = 9876519
                                     }
                                 }
@@ -161,21 +156,21 @@ namespace GraphCocoApp
                         {
                             new Customer()
                             {
-                                CustomerId = "MDT_0000104120",
+                                CustomerId = "MDT_0000104120_Dwight",
                                 Name = "Assistant to the regional manager hospital",
                                 SoldToId = "0000105106",
                                 TerritoryId = "MDTCOVUS"
                             },
                             new Customer()
                             {
-                                CustomerId = "MDT_0000106847",
+                                CustomerId = "MDT_0000106847_Dwight",
                                 Name = "0000106847 PATRICK E BROWN",
                                 SoldToId = "0000106847",
                                 TerritoryId = "MDTCHN"
                             },
                             new Customer()
                             {
-                                CustomerId = "MDT_0000107630",
+                                CustomerId = "MDT_0000107630_Dwight",
                                 Name = "0000107630 OPEN Level 4 Manager #2",
                                 SoldToId = "0000107630",
                                 TerritoryId = "MDTIT"
@@ -196,20 +191,17 @@ namespace GraphCocoApp
                                 {
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104120",
+                                        CustomerID = "MDT_0000104120_Jim",
                                         RoleId = 987546
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104500",
+                                        CustomerID = "MDT_0000104500_Jim",
                                         RoleId = 9876511
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000105100",
+                                        CustomerID = "MDT_0000105100_Jim",
                                         RoleId = 9876519
                                     }
                                 }
@@ -219,30 +211,30 @@ namespace GraphCocoApp
                         {
                             new Customer()
                             {
-                                CustomerId = "MDT_0000104120",
+                                CustomerId = "MDT_0000104120_Jim",
                                 Name = "Michael's Last Dundies",
-                                SoldToId = "0000105106",
+                                SoldToId = "0000105106_Jim",
                                 TerritoryId = "MDTCOVUS"
                             },
                             new Customer()
                             {
-                                CustomerId = "MDT_0000106847",
+                                CustomerId = "MDT_0000106847_Jim",
                                 Name = "0000106847 PATRICK E BROWN",
-                                SoldToId = "0000106847",
+                                SoldToId = "0000106847_Jim",
                                 TerritoryId = "MDTCHN"
                             },
                             new Customer()
                             {
-                                CustomerId = "MDT_0000107630",
+                                CustomerId = "MDT_0000107630_Jim",
                                 Name = "0000107630 OPEN Level 4 Manager #2",
-                                SoldToId = "0000107630",
+                                SoldToId = "0000107630_Jim",
                                 TerritoryId = "MDTIT"
                             },
                             new Customer()
                             {
-                                CustomerId = "MDT_0000108143",
+                                CustomerId = "MDT_0000108143_Jim",
                                 Name = "0000108143 MATTHEW G GOETZ",
-                                SoldToId = "0000108143",
+                                SoldToId = "0000108143_Jim",
                                 TerritoryId = "MDTIN"
                             }
                         }
@@ -261,20 +253,17 @@ namespace GraphCocoApp
                                 {
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104120",
+                                        CustomerID = "MDT_0000104120_Ryan",
                                         RoleId = 987546
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104500",
+                                        CustomerID = "MDT_0000104500_Ryan",
                                         RoleId = 9876511
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000105100",
+                                        CustomerID = "MDT_0000105190_Ryan",
                                         RoleId = 9876519
                                     }
                                 }
@@ -326,20 +315,17 @@ namespace GraphCocoApp
                                 {
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104120",
+                                        CustomerID = "MDT_0000104120_kevin",
                                         RoleId = 987546
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000104500",
+                                        CustomerID = "MDT_0000104500_Kevin",
                                         RoleId = 9876511
                                     },
                                     new Role()
                                     {
-                                        BuId = "MDT",
-                                        CustomerID = "MDT_0000105100",
+                                        CustomerID = "MDT_0000105100_Kevin",
                                         RoleId = 9876519
                                     }
                                 }
@@ -366,14 +352,14 @@ namespace GraphCocoApp
                                 CustomerId = "MDT_0000107630_Kevin",
                                 Name = "0000107630 OPEN Level 4 Manager #2",
                                 SoldToId = "0000107630",
-                                TerritoryId = "MDTIT"
+                                TerritoryId = "MDTIN"
                             },
                             new Customer()
                             {
                                 CustomerId = "MDT_0000108143_Kevin",
                                 Name = "0000108143 MATTHEW G GOETZ",
                                 SoldToId = "0000108143",
-                                TerritoryId = "MDTIN"
+                                TerritoryId = "MDTGER"
                             }
                         }
                     });

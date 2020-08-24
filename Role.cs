@@ -11,7 +11,7 @@ namespace GraphCocoApp
     {
             [Key]
             [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-            public string BuId { get; set; }
+            //public string BuId { get; set; }
             public string CustomerID { get; set; }
             public int RoleId { get; set; }
 

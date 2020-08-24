@@ -19,7 +19,7 @@ namespace GraphCocoApp
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite("Data Source=uni.db");
+            options.UseSqlite("Data Source=ConnectUsers.db");
             options.UseLoggerFactory(_loggerFactory);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
